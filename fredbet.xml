@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>fredbet</Name>
+  <Repository>fred4jupiter/fredbet:latest</Repository>
+  <Registry>https://hub.docker.com/r/fred4jupiter/fredbet</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Simple football betting application using Spring Boot, Thymeleaf and Bootstrap. The web pages are constructed in responsive design for using on mobile devices.&#xD;
+For EM 2024 got to: https://github.com/fred4jupiter/fredbet?tab=readme-ov-file#ms-excel-templates-ready-to-import&#xD;
+Default Login - Username: admin | Password: admin&#xD;
+ - simple betting of football championchips&#xD;
+ - responsive design (mobile first design)&#xD;
+ - extra betting of 1st, 2nd and 3rd winner&#xD;
+ - image gallery (image storage support: filesystem, database)&#xD;
+ - user profile image&#xD;
+ - multiple database types supported (H2, MariaDB, MySQL, PostgeSQL)&#xD;
+ - integrated user administration&#xD;
+ - rich text editor for rules, prices and misc pages&#xD;
+ - points statistic&#xD;
+ - display other users bets after match kickoff&#xD;
+ - ranking page&#xD;
+ - Microsoft Excel match import&#xD;
+ - Microsoft Excel bets, statistic export&#xD;
+ - language switcher (supported languages: englisch, german, polish, catalan, spanish, swedish)&#xD;
+ - ranking filter for adults and childs listing&#xD;
+ - integrated testing capabilities: create demo users, matches, bets...&#xD;
+ - configurable runtime configuration&#xD;
+ - use a joker to double your points&#xD;
+ - self registration (can be disabled)&#xD;
+ - PDF export of user ranking&#xD;
+ - Group standings&#xD;
+ - change UI design themes</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1716839152</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Need Database: H2, MySQL, MariaDB or PostgreSQL</Requires>
+  <Config Name="WebGUI" Target="" Default="8080" Mode="tcp" Description="WebGUI" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="SPRING_PROFILES_ACTIVE" Target="SPRING_PROFILES_ACTIVE" Default="postgres" Mode="" Description="Active Spring profile at startup. Possible values: h2,dev,maria,mysql,postgres." Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="SPRING_DATASOURCE_URL" Target="SPRING_DATASOURCE_URL" Default="jdbc:postgresql://postgres:5432/fredbetdb" Mode="" Description="JDBC connection URL" Type="Variable" Display="always" Required="true" Mask="false">jdbc:postgresql://postgres:5432/fredbetdb</Config>
+  <Config Name="SPRING_DATASOURCE_DRIVER_CLASS_NAME" Target="SPRING_DATASOURCE_DRIVER_CLASS_NAME" Default="org.postgresql.Driver" Mode="" Description="H2 - org.h2.Driver - h2 | MySQL - com.mysql.jdbc.Driver - mysql | MariaDB - org.mariadb.jdbc.Driver - maria | PostgreSQL - org.postgresql.Driver - postgres" Type="Variable" Display="always" Required="true" Mask="false">org.postgresql.Driver</Config>
+  <Config Name="SPRING_DATASOURCE_USERNAME" Target="SPRING_DATASOURCE_USERNAME" Default="sa" Mode="" Description="The database username" Type="Variable" Display="always" Required="true" Mask="false">sa</Config>
+  <Config Name="SPRING_DATASOURCE_PASSWORD" Target="SPRING_DATASOURCE_PASSWORD" Default="password" Mode="" Description="The database password" Type="Variable" Display="always" Required="true" Mask="true">password</Config>
+  <Config Name="Log Path" Target="/logs" Default="/mnt/user/appdata/fredbet/logs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fredbet/logs</Config>
+</Container>
