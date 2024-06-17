@@ -37,7 +37,7 @@ Default Login - Username: admin | Password: admin&#xD;
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon/>https://github.com/J000K3R/unraid-templates/blob/main/Fredbet/logo.jpg<Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
