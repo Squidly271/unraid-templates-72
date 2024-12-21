@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/fred4jupiter/fredbet<Project/>
+  <Project>https://github.com/fred4jupiter/fredbet</Project>
   <Overview>Simple football betting application using Spring Boot, Thymeleaf and Bootstrap. The web pages are constructed in responsive design for using on mobile devices.&#xD;
 For EM 2024 got to: https://github.com/fred4jupiter/fredbet?tab=readme-ov-file#ms-excel-templates-ready-to-import&#xD;
 Default Login - Username: admin | Password: admin&#xD;
